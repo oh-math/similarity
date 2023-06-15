@@ -1,9 +1,5 @@
-import Paragraph from "./components/Paragraph";
+import { Inter } from "next/font/google";
 
 export default function Home() {
-  return (
-    <main className="bg-red-500">
-      <Paragraph></Paragraph>
-    </main>
-  );
+  return <main className="bg-red-500"></main>;
 }
