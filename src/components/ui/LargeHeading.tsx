@@ -5,20 +5,20 @@ import { mergeClass } from "../../lib/utils";
 // TODO: VERIFICAR SINTAXE TAILWIND
 
 const headingVariants = cva(
-  "text-black dark:text-white text-center lg:text-left font extrabold leading-tight tracking-tight",
+  'text-black dark:text-white text-center lg:text-left font-extrabold leading-tight tracking-tighter',
   {
     variants: {
       size: {
-        default: "text-4x1 md:text-5x1 lg:text-7x1",
-        lg: "text-5x1 md:text-6x1 lg:text-7x1",
-        sm: "text-2x1 md:text-3x1 lg:text-4x1",
+        default: 'text-4xl md:text-5xl lg:text-6xl',
+        lg: 'text-5xl md:text-6xl lg:text-7xl',
+        sm: 'text-2xl md:text-3xl lg:text-4xl',
       },
     },
     defaultVariants: {
-      size: "default",
+      size: 'default',
     },
   }
-);
+)
 
 interface LargeHeadingProps
   extends HTMLAttributes<HTMLHeadingElement>,
@@ -37,7 +37,5 @@ const LargeHeading = forwardRef<HTMLHeadingElement, LargeHeadingProps>(
     );
   }
 );
-
-LargeHeading.displayName = "LargeHeading";
 
 export default LargeHeading;

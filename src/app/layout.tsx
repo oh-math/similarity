@@ -1,5 +1,6 @@
 import NavBar from "@/components/Navbar";
 import Providers from "@/components/Providers";
+import { Toaster } from "@/components/ui/Toast";
 import { mergeClass } from "@/lib/utils";
 import "@/styles/globals.css";
 import { Inter } from "next/font/google";
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Providers>
           {children}
 
+          <Toaster position="bottom-right" />
           <NavBar />
         </Providers>
 
