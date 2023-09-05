@@ -10,7 +10,7 @@ const Providers = ({ children }: { children: ReactNode }) => {
     // componente que permite habilitar os temas (dark e light)
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       {/* componente que permite autenticação client side 
-      secundária (principa será no servidor) */}
+      secundária (principal será no servidor) */}
       <SessionProvider>{children}</SessionProvider>
     </ThemeProvider>
   );

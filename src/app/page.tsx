@@ -5,7 +5,7 @@ import Paragraph from "@/components/ui/Paragraph";
 import Link from "next/link";
 import Image from "next/image";
 
-export const metada: Metadata = {
+export const metadata: Metadata = {
   title: "Similarity API | Home",
   description: "Free & open-source text similarity API",
 };
